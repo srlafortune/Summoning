@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://player.gd" id="1_rpg6w"]
 [ext_resource type="PackedScene" uid="uid://b7mxwnknq21v2" path="res://golem.tscn" id="2_eg4wf"]
-[ext_resource type="Texture2D" uid="uid://bthnqrdm4btnl" path="res://player.png" id="2_jsl7p"]
+[ext_resource type="Texture2D" uid="uid://dfcjgtxdyugp2" path="res://Main_Static_Front.png" id="3_iciwn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn2b5"]
-size = Vector2(87, 169)
+size = Vector2(128, 160)
 
 [sub_resource type="Curve2D" id="Curve2D_g11ag"]
 _data = {
@@ -20,11 +20,10 @@ golem_scene = ExtResource("2_eg4wf")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_jsl7p")
+scale = Vector2(6, 6)
+texture = ExtResource("3_iciwn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_bn2b5")
 
 [node name="Camera2D" type="Camera2D" parent="."]

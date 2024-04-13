@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6b4y4ntmm06w"
-path="res://.godot/imported/golem.png-1cf00e4506dd769502201cd7d0a7aded.ctex"
+uid="uid://dfcjgtxdyugp2"
+path="res://.godot/imported/Main_Static_Front.png-600d8b8a56646807c2d00614e661922e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://golem.png"
-dest_files=["res://.godot/imported/golem.png-1cf00e4506dd769502201cd7d0a7aded.ctex"]
+source_file="res://Main_Static_Front.png"
+dest_files=["res://.godot/imported/Main_Static_Front.png-600d8b8a56646807c2d00614e661922e.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
