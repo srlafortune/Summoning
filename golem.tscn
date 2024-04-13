@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7mxwnknq21v2"]
+
+[ext_resource type="Texture2D" uid="uid://b6b4y4ntmm06w" path="res://golem.png" id="1_edcqw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tawus"]
+radius = 166.46
+
+[node name="Golem" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_edcqw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_tawus")
