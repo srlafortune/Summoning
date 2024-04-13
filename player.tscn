@@ -1,14 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwmqgxnvr4dbi"]
+[gd_scene load_steps=6 format=3 uid="uid://dwmqgxnvr4dbi"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_rpg6w"]
+[ext_resource type="PackedScene" uid="uid://b7mxwnknq21v2" path="res://golem.tscn" id="2_eg4wf"]
 [ext_resource type="Texture2D" uid="uid://bthnqrdm4btnl" path="res://player.png" id="2_jsl7p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn2b5"]
 size = Vector2(87, 169)
 
+[sub_resource type="Curve2D" id="Curve2D_g11ag"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 576, 0)
+}
+point_count = 2
+
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_rpg6w")
+golem_scene = ExtResource("2_eg4wf")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -22,3 +30,12 @@ shape = SubResource("RectangleShape2D_bn2b5")
 [node name="Camera2D" type="Camera2D" parent="."]
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+
+[node name="GolemsPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_g11ag")
+
+[node name="GolemLocation" type="PathFollow2D" parent="GolemsPath"]
+
+[node name="Line2D" type="Line2D" parent="GolemsPath"]
+position = Vector2(0, 2)
+points = PackedVector2Array(576, -2, 0, -2)
