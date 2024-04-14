@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://jfbwjtpo3017" path="res://Art/placeholderbackground.jpg" id="1_5gqwm"]
 
 [node name="Background" type="TextureRect"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 3.0
+offset_top = -1.0
+offset_right = 1283.0
+offset_bottom = 719.0
 texture = ExtResource("1_5gqwm")
