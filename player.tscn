@@ -1,8 +1,76 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwmqgxnvr4dbi"]
+[gd_scene load_steps=16 format=3 uid="uid://dwmqgxnvr4dbi"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_rpg6w"]
 [ext_resource type="PackedScene" uid="uid://b7mxwnknq21v2" path="res://golem.tscn" id="2_eg4wf"]
-[ext_resource type="Texture2D" uid="uid://dfcjgtxdyugp2" path="res://Main_Static_Front.png" id="3_iciwn"]
+[ext_resource type="Texture2D" uid="uid://db5h6wbkwpum2" path="res://Art/Main_Front_Right.png" id="3_l3ulp"]
+[ext_resource type="Texture2D" uid="uid://bysmnr1jfqe6g" path="res://Art/Main_Front_Static.png" id="4_3q03w"]
+[ext_resource type="Texture2D" uid="uid://uy1w3gam6wvy" path="res://Art/Main_Front_Left.png" id="5_djeq5"]
+[ext_resource type="Texture2D" uid="uid://cbvox0iq7tu0s" path="res://Art/Main_Left_Walk.png" id="6_eaywk"]
+[ext_resource type="Texture2D" uid="uid://csat5oi4tk6nt" path="res://Art/Main_Left_Static.png" id="7_qhqkb"]
+[ext_resource type="Texture2D" uid="uid://bg13nstm4cktv" path="res://Art/Main_Right_Walk.png" id="8_jb06s"]
+[ext_resource type="Texture2D" uid="uid://dwce2577v8avk" path="res://Art/Main_Right_Static.png" id="9_f4k55"]
+[ext_resource type="Texture2D" uid="uid://bav4i1dnlx6a" path="res://Art/Main_Back_Right.png" id="10_e2jx2"]
+[ext_resource type="Texture2D" uid="uid://bhg8p6ixc8sa4" path="res://Art/Main_Back_Static.png" id="11_bqtkp"]
+[ext_resource type="Texture2D" uid="uid://b6fc3cdskv6am" path="res://Art/Main_Back_Left.png" id="12_0sy0t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8efrf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l3ulp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3q03w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_djeq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3q03w")
+}],
+"loop": true,
+"name": &"down",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_eaywk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qhqkb")
+}],
+"loop": true,
+"name": &"left",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jb06s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f4k55")
+}],
+"loop": true,
+"name": &"right",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_e2jx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bqtkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0sy0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bqtkp")
+}],
+"loop": true,
+"name": &"up",
+"speed": 4.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn2b5"]
 size = Vector2(128, 160)
@@ -19,9 +87,10 @@ script = ExtResource("1_rpg6w")
 golem_scene = ExtResource("2_eg4wf")
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(6, 6)
-texture = ExtResource("3_iciwn")
+sprite_frames = SubResource("SpriteFrames_8efrf")
+animation = &"right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bn2b5")

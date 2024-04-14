@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://e2o5psh4bbci"]
 
-[ext_resource type="Texture2D" uid="uid://jfbwjtpo3017" path="res://art/placeholderbackground.jpg" id="1_5gqwm"]
+[ext_resource type="Texture2D" uid="uid://jfbwjtpo3017" path="res://Art/placeholderbackground.jpg" id="1_5gqwm"]
 
 [node name="Background" type="TextureRect"]
 offset_right = 40.0

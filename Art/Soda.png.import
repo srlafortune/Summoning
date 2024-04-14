@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jfbwjtpo3017"
-path="res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"
+uid="uid://bbkf27uwq4ouq"
+path="res://.godot/imported/Soda.png-1c0af745aad41b4b2c134e8400429c6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholderbackground.jpg"
-dest_files=["res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"]
+source_file="res://Art/Soda.png"
+dest_files=["res://.godot/imported/Soda.png-1c0af745aad41b4b2c134e8400429c6a.ctex"]
 
 [params]
 

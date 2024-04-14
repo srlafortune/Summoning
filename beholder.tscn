@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://vf5d8oinydfv"]
+
+[ext_resource type="Script" path="res://Beholder.gd" id="1_cf6sn"]
+[ext_resource type="Texture2D" uid="uid://dtjdyc270bcp4" path="res://Art/Beholder_MainModel_1.png" id="2_03wfq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_72pv8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_03wfq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m15py"]
+
+[node name="Beholder" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_cf6sn")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_72pv8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_m15py")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

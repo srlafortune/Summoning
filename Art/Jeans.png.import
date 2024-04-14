@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jfbwjtpo3017"
-path="res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"
+uid="uid://dr381ym4dm0r7"
+path="res://.godot/imported/Jeans.png-3618856fd1cc548cc401cd66b1f515c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholderbackground.jpg"
-dest_files=["res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"]
+source_file="res://Art/Jeans.png"
+dest_files=["res://.godot/imported/Jeans.png-3618856fd1cc548cc401cd66b1f515c9.ctex"]
 
 [params]
 

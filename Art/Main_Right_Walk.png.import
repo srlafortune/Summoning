@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jfbwjtpo3017"
-path="res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"
+uid="uid://bg13nstm4cktv"
+path="res://.godot/imported/Main_Right_Walk.png-abaff4277589e150ed2e1e3a7cdba34f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholderbackground.jpg"
-dest_files=["res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"]
+source_file="res://Art/Main_Right_Walk.png"
+dest_files=["res://.godot/imported/Main_Right_Walk.png-abaff4277589e150ed2e1e3a7cdba34f.ctex"]
 
 [params]
 

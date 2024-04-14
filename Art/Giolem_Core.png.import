@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jfbwjtpo3017"
-path="res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"
+uid="uid://dmia45g1wn5a3"
+path="res://.godot/imported/Giolem_Core.png-e9bbf6123ea922f9af919b7d6715ab86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholderbackground.jpg"
-dest_files=["res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"]
+source_file="res://Art/Giolem_Core.png"
+dest_files=["res://.godot/imported/Giolem_Core.png-e9bbf6123ea922f9af919b7d6715ab86.ctex"]
 
 [params]
 

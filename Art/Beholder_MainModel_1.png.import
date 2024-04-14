@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jfbwjtpo3017"
-path="res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"
+uid="uid://dtjdyc270bcp4"
+path="res://.godot/imported/Beholder_MainModel_1.png-a8897c9bad13e88a3f21cbeab003ee75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholderbackground.jpg"
-dest_files=["res://.godot/imported/placeholderbackground.jpg-cc5888397d6f2e440469c040dfe8d184.ctex"]
+source_file="res://Art/Beholder_MainModel_1.png"
+dest_files=["res://.godot/imported/Beholder_MainModel_1.png-a8897c9bad13e88a3f21cbeab003ee75.ctex"]
 
 [params]
 
