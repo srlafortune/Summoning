@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://du3y6a4cstyph"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_2eosk"]
-[ext_resource type="PackedScene" uid="uid://e2o5psh4bbci" path="res://Background.tscn" id="1_nopqr"]
+[ext_resource type="PackedScene" uid="uid://dnn545jflkqhx" path="res://Background.tscn" id="1_nopqr"]
 [ext_resource type="PackedScene" uid="uid://vf5d8oinydfv" path="res://beholder.tscn" id="2_124jg"]
 [ext_resource type="PackedScene" uid="uid://dwmqgxnvr4dbi" path="res://player.tscn" id="2_jb2ov"]
 
@@ -15,12 +15,6 @@ point_count = 5
 script = ExtResource("1_2eosk")
 beholder_scene = ExtResource("2_124jg")
 
-[node name="Background" parent="." instance=ExtResource("1_nopqr")]
-offset_bottom = 720.0
-
-[node name="Player" parent="." instance=ExtResource("2_jb2ov")]
-position = Vector2(619, 368)
-
 [node name="StartPosition" type="Marker2D" parent="."]
 
 [node name="BeholderSpawnPath" type="Path2D" parent="."]
@@ -29,3 +23,10 @@ curve = SubResource("Curve2D_m6gre")
 [node name="BeholderSpawner" type="PathFollow2D" parent="BeholderSpawnPath"]
 position = Vector2(16, 23)
 rotation = 0.00493012
+
+[node name="Background" parent="." instance=ExtResource("1_nopqr")]
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Player" parent="." instance=ExtResource("2_jb2ov")]
+position = Vector2(619, 368)

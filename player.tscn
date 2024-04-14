@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://dwmqgxnvr4dbi"]
+[gd_scene load_steps=15 format=3 uid="uid://dwmqgxnvr4dbi"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_rpg6w"]
-[ext_resource type="PackedScene" uid="uid://b7mxwnknq21v2" path="res://golem.tscn" id="2_eg4wf"]
 [ext_resource type="Texture2D" uid="uid://db5h6wbkwpum2" path="res://Art/Main_Front_Right.png" id="3_l3ulp"]
 [ext_resource type="Texture2D" uid="uid://bysmnr1jfqe6g" path="res://Art/Main_Front_Static.png" id="4_3q03w"]
 [ext_resource type="Texture2D" uid="uid://uy1w3gam6wvy" path="res://Art/Main_Front_Left.png" id="5_djeq5"]
@@ -30,7 +29,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"down",
-"speed": 4.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -41,7 +40,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"left",
-"speed": 2.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -52,7 +51,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"right",
-"speed": 2.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -69,7 +68,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"up",
-"speed": 4.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn2b5"]
@@ -84,13 +83,13 @@ point_count = 2
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_rpg6w")
-golem_scene = ExtResource("2_eg4wf")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_8efrf")
 animation = &"right"
+frame_progress = 0.205707
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bn2b5")
