@@ -4,9 +4,11 @@ extends CharacterBody2D
 var angular_speed = 100.0
 @export var golem_scene: PackedScene
 
+var golem_count = 2;
+
 func _ready():
-	$GolemsPath.rotation_degrees = 180
-	add_golem()
+	$GolemsPath.rotation_degrees = -180
+	# add_golems()
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -17,7 +19,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 	var current_angle = $GolemsPath.rotation
-	var delta_angle = rad_to_deg(velocity.rotated(deg_to_rad(180)).angle() - current_angle)
+	var delta_angle = rad_to_deg((velocity * - 1).angle() - current_angle)
 
 	if delta_angle > 180:
 			delta_angle -= 360
@@ -28,13 +30,10 @@ func _physics_process(delta):
 
 	var rotation_amount = angular_speed * delta * direction
 
-	if (velocity.length() > 0):
-		if abs(delta_angle) > 1.0:
-			$GolemsPath.rotate(deg_to_rad(rotation_amount))
+	if velocity.length() > 0:
+		$GolemsPath.rotate(deg_to_rad(rotation_amount))
 
-func add_golem():
-	var golem = golem_scene.instantiate()
-
-	var golem_location = $GolemsPath/GolemLocation
-	golem_location.progress_ratio = 0.75
-	golem_location.add_child(golem)
+	if abs(delta_angle) < 2.0:
+		angular_speed = 0
+	else:
+		angular_speed = 100.0
