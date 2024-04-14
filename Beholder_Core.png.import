@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6b4y4ntmm06w"
-path="res://.godot/imported/golem.png-1cf00e4506dd769502201cd7d0a7aded.ctex"
+uid="uid://bnnwo02oj7pnp"
+path="res://.godot/imported/Beholder_Core.png-011711ebd21d0943bb0a36263820e317.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://golem.png"
-dest_files=["res://.godot/imported/golem.png-1cf00e4506dd769502201cd7d0a7aded.ctex"]
+source_file="res://Beholder_Core.png"
+dest_files=["res://.godot/imported/Beholder_Core.png-011711ebd21d0943bb0a36263820e317.ctex"]
 
 [params]
 

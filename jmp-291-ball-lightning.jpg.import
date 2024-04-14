@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bthnqrdm4btnl"
-path="res://.godot/imported/player.png-2dd0af52de4b213777cd8c9df94c0978.ctex"
+uid="uid://dqqr1ymmogat0"
+path="res://.godot/imported/jmp-291-ball-lightning.jpg-0eb45e3b9f1eebc34ba29eeb3963df53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player.png"
-dest_files=["res://.godot/imported/player.png-2dd0af52de4b213777cd8c9df94c0978.ctex"]
+source_file="res://jmp-291-ball-lightning.jpg"
+dest_files=["res://.godot/imported/jmp-291-ball-lightning.jpg-0eb45e3b9f1eebc34ba29eeb3963df53.ctex"]
 
 [params]
 

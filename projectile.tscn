@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4k4ovai442rf"]
+
+[ext_resource type="Texture2D" uid="uid://dqqr1ymmogat0" path="res://jmp-291-ball-lightning.jpg" id="1_6ok18"]
+[ext_resource type="Script" path="res://projectile.gd" id="1_w1yvg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l462k"]
+size = Vector2(234, 168)
+
+[node name="Projectile" type="RigidBody2D"]
+gravity_scale = 1.66533e-16
+lock_rotation = true
+script = ExtResource("1_w1yvg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_6ok18")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_l462k")
