@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dwmqgxnvr4dbi"]
+[gd_scene load_steps=14 format=3 uid="uid://dwmqgxnvr4dbi"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_rpg6w"]
 [ext_resource type="Texture2D" uid="uid://db5h6wbkwpum2" path="res://Art/Main_Front_Right.png" id="3_l3ulp"]
@@ -74,12 +74,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn2b5"]
 size = Vector2(128, 160)
 
-[sub_resource type="Curve2D" id="Curve2D_g11ag"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 128, -192, 0, 0, 0, 0, 128, 192)
-}
-point_count = 2
-
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_rpg6w")
@@ -98,22 +92,3 @@ shape = SubResource("RectangleShape2D_bn2b5")
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
-
-[node name="GolemsPath" type="Path2D" parent="."]
-curve = SubResource("Curve2D_g11ag")
-
-[node name="GolemLocation0" type="PathFollow2D" parent="GolemsPath"]
-position = Vector2(128, -192)
-rotation = 1.5708
-
-[node name="GolemLocation1" type="PathFollow2D" parent="GolemsPath"]
-position = Vector2(128, -192)
-rotation = 1.5708
-
-[node name="GolemLocation2" type="PathFollow2D" parent="GolemsPath"]
-position = Vector2(128, -192)
-rotation = 1.5708
-
-[node name="GolemLocation3" type="PathFollow2D" parent="GolemsPath"]
-position = Vector2(128, -192)
-rotation = 1.5708

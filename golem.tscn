@@ -8,6 +8,7 @@
 radius = 63.0
 
 [node name="Golem" type="RigidBody2D"]
+gravity_scale = 1.66533e-16
 script = ExtResource("1_vdml0")
 projectile_scene = ExtResource("2_fe35e")
 metadata/_edit_group_ = true

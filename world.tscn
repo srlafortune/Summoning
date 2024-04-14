@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://du3y6a4cstyph"]
+[gd_scene load_steps=7 format=3 uid="uid://du3y6a4cstyph"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_2eosk"]
 [ext_resource type="PackedScene" uid="uid://dnn545jflkqhx" path="res://Background.tscn" id="1_nopqr"]
 [ext_resource type="PackedScene" uid="uid://vf5d8oinydfv" path="res://beholder.tscn" id="2_124jg"]
 [ext_resource type="PackedScene" uid="uid://dwmqgxnvr4dbi" path="res://player.tscn" id="2_jb2ov"]
+[ext_resource type="PackedScene" uid="uid://b7mxwnknq21v2" path="res://golem.tscn" id="5_bev27"]
 
 [sub_resource type="Curve2D" id="Curve2D_m6gre"]
 _data = {
@@ -14,6 +15,7 @@ point_count = 5
 [node name="Main" type="Node"]
 script = ExtResource("1_2eosk")
 beholder_scene = ExtResource("2_124jg")
+golem_scene = ExtResource("5_bev27")
 
 [node name="StartPosition" type="Marker2D" parent="."]
 
@@ -25,8 +27,17 @@ position = Vector2(16, 23)
 rotation = 0.00493012
 
 [node name="Background" parent="." instance=ExtResource("1_nopqr")]
+visible = false
 offset_right = 1280.0
 offset_bottom = 720.0
 
 [node name="Player" parent="." instance=ExtResource("2_jb2ov")]
 position = Vector2(619, 368)
+
+[node name="Golem" parent="." instance=ExtResource("5_bev27")]
+position = Vector2(619, 592)
+
+[node name="DampedSpringJoint2D" type="DampedSpringJoint2D" parent="."]
+position = Vector2(619, 368)
+node_a = NodePath("../Player")
+node_b = NodePath("../Golem")
