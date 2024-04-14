@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://du3y6a4cstyph"]
+
+[ext_resource type="PackedScene" uid="uid://e2o5psh4bbci" path="res://Background.tscn" id="1_nopqr"]
+[ext_resource type="PackedScene" uid="uid://dwmqgxnvr4dbi" path="res://player.tscn" id="2_jb2ov"]
+
+[node name="Main" type="Node"]
+
+[node name="StartPosition" type="Marker2D" parent="."]
+
+[node name="Background" parent="StartPosition" instance=ExtResource("1_nopqr")]
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="Player" parent="StartPosition" instance=ExtResource("2_jb2ov")]
+position = Vector2(619, 368)
